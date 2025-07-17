@@ -17,7 +17,6 @@ This project demonstrates:
 ## Features
 
 - Add new todo items
-- Mark items as completed
 - Remove items from the list
 - Real-time UI updates based on internal state
 - Minimal and efficient DOM updates

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #B2CD9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main {
+    width: 600px;
+    min-height: 500px;
+    background-color: #CA7842;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Input part */
+
+
+.app-input {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app-input #title {
+    width: 20%;
+    height: 50%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: #F0F2BD;
+}
+
+.app-input #description {
+    width: 50%;
+    height: 50%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: #F0F2BD;
+}
+
+.app-input .add-todo {
+    width: 15%;
+    height: 50%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: #F0F2BD;
+    font-size: larger;
+    font-weight: bolder;
+    transition: all 0.1s ease-in-out;
+}
+
+.app-input .add-todo:hover {
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/* User data part */
+
+.my-todos {
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 20px;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #4B352A;
+    color: white;
+}
+
+.my-todos .show {
+    width: 70%;
+
+}
+
+.my-todos .show .my-title {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.my-todos .show .my-des {
+    font-size: 17px;
+}
+
+.my-todos .remove-done {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.my-todos .remove-done .delete,
+.my-todos .remove-done .done {
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.my-todos .remove-done .delete:hover,
+.my-todos .remove-done .done:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    #main {
+        width: 300px;
+    }
+
+    .app-input {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .app-input #title {
+        width: 60%;
+        height: 50px;
+    }
+
+    .app-input #description {
+        width: 80%;
+        height: 50px;
+    }
+
+    .app-input .add-todo {
+        width: 60%;
+        height: 50px;
+    }
+
+    .my-todos {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .my-todos .show {
+        width: 90%;
+        min-height: 100px;
+    }
+
+    .my-todos .remove-done {
+        flex-direction: row;
+        width: 90%;
+    }
+}

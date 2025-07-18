@@ -21,5 +21,3 @@ This project demonstrates:
 - Real-time UI updates based on internal state
 - Minimal and efficient DOM updates
 
-## Folder Structure
-
